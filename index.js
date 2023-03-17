@@ -42,7 +42,7 @@ app.post('/pay', (req,res)=>{
     if(error){
         console.log(error);
     } else {
-        response.send("Please check your email");
+        res.send("Please check your email");
     }
    })
 })
