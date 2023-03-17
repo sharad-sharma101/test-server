@@ -30,7 +30,7 @@ app.use("/api/invoice",invoiceRouter )
 app.post('/pay', (req,res)=>{
     //console.log(req.body.name);
    const data = new Insta.PaymentData();
-   const Redirect_url = "http://localhost:3000/success"
+   const Redirect_url = "https://instamojo-test-server.onrender.com/success"
    data.setRedirectUrl(Redirect_url);
    data.send_email = "True";
    data.purpose = "Test"
