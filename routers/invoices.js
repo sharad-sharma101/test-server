@@ -38,7 +38,7 @@ router.post("/create", async(req , res) => {
 // delete invoice
 router.delete("/:invoiceID",async (req,res)=>{
     try{
-       await Invoice.remove({id: req.params.invoiceID})
+       await Invoice.remove({ _id: req.params.invoiceID})
        res.status(200).json({
         message: "done"
        })
